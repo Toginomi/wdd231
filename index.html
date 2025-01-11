@@ -4,11 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rudy Francisco Pilande II WDD231 Home Page">
+    <meta name="author" content="Rudy Pilande II">
     <title>WDD 231</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script defer src="scripts/home.js"></script>
 </head>
 
 <body>
-    <h2>WDD 231 - Pilande</h2>
+    <header>
+        <div class="profile">
+            <img src="images/profile.jpg">
+            <h1>Rudy F. Pilande II</h1>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle Menu">☰</button>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/rudy-ii-pilande/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="location">
+            <h2>Leyte, Philippines</h2>
+            <img src="images/sj-bridge.jpg">
+            <figcaption>San Juanico Bridge</figcaption>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="allCourses">All</button>
+                <button id="cseCourses">CSE</button>
+                <button id="wddCourses">WDD</button>
+            </div>
+            <div class="course-list">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Rudy Francisco Pilande II | Philippines
+        </p>
+        <p id="lastModified">Last Update: </p>
+    </footer>
 </body>
 
 </html>
