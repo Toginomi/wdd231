@@ -5,7 +5,7 @@ async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets)
-    displayProphets(data.displayProphets)
+    displayProphets(data.prophets)
 }
 
 getProphetData();
@@ -14,9 +14,11 @@ const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
+        let birth = document.createElement('p');
         let portrait = document.createElement('img');
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birth.textContent = `Birth: ${prophet.birthdate} (${prophet.birthplace})`;
 
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
@@ -25,6 +27,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
 
         card.appendChild(fullName);
+        card.appendChild(birth);
         card.appendChild(portrait);
 
         cards.appendChild(card);
