@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const cards = document.querySelector('#members');
+const cards = document.querySelector("#members");
 const path = "./data/members.json";
 
 async function getMembers() {
@@ -29,7 +29,7 @@ async function getMembers() {
         //console.log(data.members);
         displayMembers(data.members);
     } catch (error) {
-        console.error('Error fetching members:', error);
+        console.error("Error fetching members:", error);
     }
 }
 getMembers();
