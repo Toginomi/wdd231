@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Tech Innovators Inc.",
+        "address": "123 Innovation Drive, Silimage Valley, CA",
+        "phone": "(555) 123-4567",
+        "website": "https://techinnovators.com",
+        "level": 3
+    },
+    {
+        "name": "Green Earth Co.",
+        "address": "45 Eco Lane, Portland, OR",
+        "phone": "(555) 234-5678",
+        "website": "https://greenearth.com",
+        "level": 2
+    },
+    {
+        "name": "Health First Solutions",
+        "address": "89 Wellness Blvd, Austin, TX",
+        "phone": "(555) 345-6789",
+        "website": "https://healthfirst.com",
+        "level": 1
+    },
+    {
+        "name": "EduTech World",
+        "address": "67 Knowledge Parkway, Boston, MA",
+        "phone": "(555) 456-7890",
+        "website": "https://edutechworld.com",
+        "level": 3
+    },
+    {
+        "name": "Urban Developers Ltd.",
+        "address": "101 Metro Street, Chicago, IL",
+        "phone": "(555) 567-8901",
+        "website": "https://urbandevelopers.com",
+        "level": 2
+    },
+    {
+        "name": "Creative Studios",
+        "address": "202 Art District, Los Angeles, CA",
+        "phone": "(555) 678-9012",
+        "website": "https://creativestudios.com",
+        "level": 1
+    },
+    {
+        "name": "NextGen Energy",
+        "address": "303 Power Lane, Houston, TX",
+        "phone": "(555) 789-0123",
+        "website": "https://nextgenenergy.com",
+        "level": 3
+    }
+]
