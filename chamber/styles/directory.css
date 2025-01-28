@@ -42,7 +42,7 @@ header {
 }
 
 #hamburger {
-    display: none;
+    display: block;
     font-size: 2rem;
     background-color: #164e70;
     color: #c9cad3;
