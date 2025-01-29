@@ -12,7 +12,7 @@ main {
 
 
 header {
-    background-color: #164e70;
+    background-color: #052d45;
     color: #f5ffff;
     padding: 1rem 0;
     display: flex;
@@ -44,7 +44,7 @@ header {
 }
 
 .logo-place {
-    color: #009bdf;
+    color: #1cbcf0;
 }
 
 #hamburger {
@@ -78,7 +78,7 @@ header {
 
 .nav-links a.active,
 .nav-links {
-    color: #0094d3;
+    color: #11b7f0;
     background-color: #333;
 }
 
@@ -144,7 +144,7 @@ h1,
 }
 
 #members.grid img {
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -166,15 +166,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #164e70;
+    background-color: #052d45;
     color: #f5ffff;
     text-align: center;
-    padding: 1rem;
     margin-top: 1rem;
-}
-
-.address,
-.wdd-requirements {
     padding: 1rem 10px;
 }
 
@@ -187,7 +182,7 @@ footer {
 }
 
 .socials a {
-    color: #fff;
+    fill: #f5ffff;
 }
 
 
@@ -212,7 +207,7 @@ footer {
     }
 
     footer {
-        flex-direction: column;
+        display: grid;
     }
 
 }
