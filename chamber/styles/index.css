@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #052d45;
+    color: #f5ffff;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.logo-text {
+    display: grid;
+    justify-items: left;
+    font-size: 1.5em;
+    color: #ffffff;
+    align-self: center;
+    align-items: center;
+}
+
+.logo-place {
+    color: #1cbcf0;
+}
+
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background-color: #164e70;
+    color: #c9cad3;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links .show {
+    display: flex;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: #c9cad3;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-links a.active,
+.nav-links {
+    color: #11b7f0;
+    background-color: #333;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.hero .hero-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.hero .hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 1s forwards;
+    z-index: 2;
+}
+
+.hero .hero-text h1 {
+    font-size: 1.5rem;
+    color: #e8f5e9;
+    margin-bottom: 0.5rem;
+}
+
+.hero .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #e8f5e9;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #324b63;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: rgb(27, 63, 94);
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: large;
+    color: #2c3e50;
+    margin: .75rem;
+}
+
+#home-details {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 10px;
+}
+
+#home-details div {
+    background-color: #eee;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#current-weather-description {
+    font-size: smaller;
+    font-style: oblique;
+}
+
+#spotlight {
+    display: flex;
+    align-content: space-between;
+}
+
+#spotlight section {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+#spotlight h3 {
+    color: white;
+    margin: 0;
+    padding: .3rem 0;
+    font-size: smaller;
+}
+
+#spotlight p {
+    font-size: xx-small;
+    margin: 0;
+    padding: .2rem;
+}
+
+#spotlight img {
+    width: 60%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#members.list section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: .5rem 0;
+    padding: 20px;
+    border: solid 1px #aaa;
+    background-color: #ececf0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #052d45;
+    color: #f5ffff;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 10px;
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.socials a {
+    fill: #f5ffff;
+}
+
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: grid;
+    }
+
+}
