@@ -210,10 +210,12 @@ h2 {
     font-size: xx-small;
     margin: 0;
     padding: .2rem;
+    justify-self: bottom;
 }
 
 #spotlight img {
-    width: 60%;
+    width: 70%;
+    height: auto;
     border-radius: 8px;
     margin-top: 20px;
 }
