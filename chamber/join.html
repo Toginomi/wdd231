@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carigara Chamber of Commerce</title>
 
-    <meta name="description" content="Rudy Francisco Pilande II WDD 231 Chamber Home Page">
+    <meta name="description" content="Rudy Francisco Pilande II WDD 231 Chamber Join Page">
     <meta name="author" content="Rudy Pilande II">
 
     <meta property="og:title" content="Carigara Chamber of Commerce">
     <meta property="og:image" content="https://toginomi.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="https://toginomi.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://toginomi.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
 
     <link rel="icon" href="images/logo.jpg">
@@ -20,11 +20,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/join.css">
 
-    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/join.js"></script>
     <script defer src="scripts/nav.js"></script>
-    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
@@ -47,35 +46,95 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <img src="images/hero-image.webp" alt="Hero Image" class="hero-image">
-            <div class="hero-text">
-                <h1>This is Carigara.</h1>
-                <p>Owning a business?</p>
-                <button class="btn">Join our Chamber</button>
-            </div>
+        <h1>Join Membership</h1>
+        <div id="membership">
+            <section class="membership-form">
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html">
+                    <label>
+                        First Name
+                        <input type="text" name="first" autocomplete="given-name" title="Your first name" required>
+                    </label>
+
+                    <label>Last Name
+                        <input type="text" name="last" autocomplete="family-name" title="Your last name" required>
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="title" autocomplete="organization-title"
+                            title="The title of your organization"
+                            placeholder="Min 7 characters (letters, hyphens, spaces)" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+
+                    <label>Email
+                        <input type="email" name="email" autocomplete="email" title="Your email"
+                            placeholder="john89@gmail.com" required>
+                    </label>
+
+                    <label>Phone Number
+                        <input type="tel" name="phone" autocomplete="tel" title="Your phone number"
+                            placeholder="987-555-1234">
+                    </label>
+
+                    <label>
+                        Organization Name
+                        <input type="text" name="organization" autocomplete="organization"
+                            title="The name of your organization" required>
+                    </label>
+
+                    <label>Membership Level
+                        <select id="membership-level" name="level" title="Your membership level" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np-membership">NP Membership</option>
+                            <option value="bronze-membership">Bronze Membership</option>
+                            <option value="silver-membership">Silver Membership</option>
+                            <option value="gold-membership">Gold Membership</option>
+                        </select>
+
+                    </label>
+
+                    <label>Organization Description
+                        <textarea name="description" title="Describe your business/organization" rows="5"
+                            cols="40"></textarea>
+                    </label>
+
+                    <input type="hidden" id="date" name="date" value="">
+
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <aside id="card-np">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button id="btnNP">Learn More</button>
+                </aside>
+
+                <aside id="card-bronze">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="btnBronze">Learn More</button>
+                </aside>
+
+                <aside id="card-silver">
+                    <h3>Silver Membership Level</h3>
+                    <button id="btnSilver">Learn More</button>
+                </aside>
+
+                <aside id="card-gold">
+                    <h3>Gold Membership Level</h3>
+                    <button id="btnGold">Learn More</button>
+                </aside>
+
+                <dialog id="dialogBox">
+                    <button id="closeButton">Close</button>
+                    <h4 id="modalTitle"></h4>
+                    <div id="modalDetails"></div>
+                </dialog>
+
+            </section>
         </div>
-
-        <div id="home-details">
-            <div class="events">
-                <h2>Events</h2>
-            </div>
-            <div class="current-weather">
-                <h2>Current Weather</h2>
-                <p id="current-temperature"></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption id="current-weather-description"></figcaption>
-                </figure>
-            </div>
-            <div class="weather-forecast">
-                <h2>Weather Forecast</h2>
-                <span id="forecast"></span>
-            </div>
-        </div>
-
-
-        <div id="spotlight"></div>
     </main>
     <footer>
         <section class="address">

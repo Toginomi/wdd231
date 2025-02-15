@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #052d45;
+    color: #f5ffff;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.logo-text {
+    display: grid;
+    justify-items: left;
+    font-size: 1.5em;
+    color: #ffffff;
+    align-self: center;
+    align-items: center;
+}
+
+.logo-place {
+    color: #1cbcf0;
+}
+
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background-color: #164e70;
+    color: #c9cad3;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links .show {
+    display: flex;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: #c9cad3;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-links a.active,
+.nav-links {
+    color: #11b7f0;
+    background-color: #333;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #164e70;
+}
+
+#membership {
+    display: flex;
+    justify-content: space-around;
+}
+
+.membership-form {
+    margin: 1rem;
+}
+
+.membership-form label {
+    display: block;
+    font-size: .8rem;
+    color: #2c3e50;
+    padding-top: .2rem;
+}
+
+.membership-form input:required {
+    border-left-width: 5px;
+    border-left-color: red;
+}
+
+.membership-form input[type=text],
+.membership-form input[type=tel],
+.membership-form input[type=date],
+.membership-form input[type=email],
+.membership-form textarea,
+.membership-form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 300px;
+}
+
+.membership-form input[type=submit] {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #37495c;
+    color: white;
+    padding: .5rem .75rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.membership-form input[type=submit]:hover {
+    background-color: #16a085;
+}
+
+.membership-form button {
+    margin-top: 15px;
+    padding: 4px 6px;
+    border-radius: 8px;
+}
+
+.membership-levels aside {
+    border: solid 1px #444;
+    border-radius: 5px 20px;
+    padding: 30px;
+    background-color: #282c34;
+    text-align: center;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s ease-out forwards;
+
+}
+
+.membership-levels #card-np {
+    background-color: white;
+    border: 5px solid black;
+}
+
+.membership-levels #card-bronze {
+    background-color: #f7f7f7;
+    border: 5px solid #dca570;
+}
+
+.membership-levels #card-silver {
+    background-color: #f0f0f0;
+    border: 5px solid silver;
+}
+
+.membership-levels #card-gold {
+    background-color: #fff9e6;
+    border: 5px solid gold;
+}
+
+.membership-levels aside:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.membership-levels aside:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.membership-levels aside:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.membership-levels aside:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.membership-levels aside:nth-child(5) {
+    animation-delay: 1s;
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+dialog {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+}
+
+dialog h3 {
+    margin-bottom: 10px;
+}
+
+dialog p {
+    margin-bottom: 10px;
+}
+
+dialog li {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #052d45;
+    color: #f5ffff;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 10px;
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.socials a {
+    fill: #f5ffff;
+}
+
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    #membership {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: grid;
+    }
+
+}
