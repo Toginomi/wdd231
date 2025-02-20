@@ -24,7 +24,7 @@ const displayMembers = (members) => {
 
         title.textContent = member.name;
         image.innerHTML = `
-            <img src="${member.image}" width='300' height='200' loading='lazy'>
+            <img src="${member.image}" alt='Image for ${member.name}' width='300px' height='auto' loading='lazy'>
             <figcaption>Image for ${member.name}</figcaption>`
         address.textContent = member.address;
         description.textContent = member.description;
