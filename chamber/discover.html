@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carigara Chamber of Commerce</title>
 
-    <meta name="description" content="Rudy Francisco Pilande II WDD 231 Chamber Directory Page">
+    <meta name="description" content="Rudy Francisco Pilande II WDD 231 Chamber Discover Page">
     <meta name="author" content="Rudy Pilande II">
 
     <meta property="og:title" content="Carigara Chamber of Commerce">
     <meta property="og:image" content="https://toginomi.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="https://toginomi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://toginomi.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
     <link rel="icon" href="images/logo.jpg">
@@ -20,9 +20,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/nav.js"></script>
+    <script defer src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -39,18 +40,15 @@
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Directory</h1>
-        <div class="buttons">
-            <button id="gridButton" class="active">Grid</button>
-            <button id="listButton">List</button>
-        </div>
-        <div id="members" class="grid">
+        <h1>Discover</h1>
+        <aside class="sidebar" id="visitor-message"></aside>
+        <div id="items-of-interest">
         </div>
     </main>
     <footer>
