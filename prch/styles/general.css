@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #a8f5b5;
+    --secondary-color: #2c3e50;
+    --accent1-color: #7d2f26;
+    --accent2-color: #eaff47;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #c9cad3;
+}
+
+header {
+    background-color: var(--secondary-color);
+    border-radius: 8px 8px 0 0;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+    align-self: center;
+    border-radius: 70px;
+}
+
+.logo-text {
+    display: grid;
+    justify-items: left;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+    align-self: center;
+    align-items: center;
+}
+
+.logo-text-top {
+    color: var(--primary-color);
+}
+
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: smaller;
+    background-color: #333;
+}
+
+.nav-links .show {
+    display: flex;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    background-color: var(--);
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: bold;
+}
+
+.nav-links a:not(.active):hover {
+    color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.socials a {
+    fill: #ffffff;
+}
+
+@media (max-width: 640px) {
+    #hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    footer {
+        display: grid;
+    }
+}

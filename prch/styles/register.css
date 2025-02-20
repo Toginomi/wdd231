@@ -1,0 +1,68 @@
+#registration {
+    display: flex;
+    justify-content: center;
+}
+
+.registration-form {
+    margin: 1rem;
+    align-self: center;
+}
+
+.registration-form label {
+    display: block;
+    font-size: .8rem;
+    color: #2c3e50;
+    padding-top: .2rem;
+}
+
+.registration-form input:required,
+.registration-form select:required {
+    border-left-width: 5px;
+    border-left-color: red;
+}
+
+.registration-form input[type=text],
+.registration-form input[type=tel],
+.registration-form input[type=email],
+.registration-form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.registration-form select[multiple] {
+    height: auto;
+    padding: .3rem;
+    border: 1px solid #ccc;
+}
+
+.registration-form input[type=submit] {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #37495c;
+    color: white;
+    padding: .5rem .75rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.registration-form input[type=submit]:hover {
+    background-color: #16a085;
+}
+
+
+.registration-form label {
+    margin-bottom: 0.5rem;
+}
+
+.registration-form select[multiple] option {
+    padding: 2px 4px;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="This is the Pisay Review Center at Home website (Homepage).">
+    <meta name="description" content="This is the Pisay Review Center at Home website (Register).">
     <meta name="author" content="Rudy F. Pilande II">
 
     <meta property="og:title" content="PRCH">
@@ -21,13 +21,13 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/register.css">
 
     <script defer src="scripts/nav.js"></script>
-    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/register.js"></script>
+    <script defer src="scripts/thankyou.js"></script>
 
-
-    <title>PRCH - Home</title>
+    <title>PRCH - Register</title>
     <link rel="icon" href="images/prch.png">
 </head>
 
@@ -44,39 +44,22 @@
     </header>
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="our-mentors.html">Our Mentors</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href=" our-mentors.html">Our Mentors</a></li>
+            <li><a href="register.html" class=" active">Register</a></li>
+            <!-- <li><a href="contact-us.html">Contact Us</a></li> -->
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <img src="images/hero-image.webp" alt="Hero Image" class="hero-image" loading="lazy">
-            <div class="hero-text">
-                <h1>Wanna become Pisay ready?</h1>
-                <p>PRCH helps.</p>
-                <button class="btn">Join our Class</button>
-            </div>
-        </div>
+        <h1>Thank You!</h1>
+        <p class="p">We are very grateful for your interest in joining our program and we'll contact you soon!
+            Attached below is a copy of your registration details.
+        </p>
+        <h2>Registration Details</h2>
 
-        <div id="prch-details">
-            <div class="about-us">
-                <h2>What we do</h2>
-                <p class="">PRCH provides comprehensive preparation for the Philippine Science High School National
-                    Competitive Exam (NCE). Our programs cover all key areas of the NCE, including in-depth review of
-                    math, science, verbal aptitude, and logical reasoning, along with proven test-taking strategies,
-                    practice exams, and personalized feedback from experienced instructors. We aim to unlock each
-                    student's full potential and guide them on the path to Pisay success.</p>
-                <a href="about-us.html" class="expand-details">More about us</a>
-            </div>
-            <div class="our-mentors">
-                <h2>Who we are</h2>
-                <div id="spotlight">
-                </div>
-                <a href="our-mentors.html" class="expand-details">View all mentors</a>
-            </div>
+        <div id="results"></div>
+
     </main>
     <footer>
         <div class="socials">
